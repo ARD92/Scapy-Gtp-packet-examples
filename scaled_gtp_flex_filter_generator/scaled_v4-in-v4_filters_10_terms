@@ -1,0 +1,180 @@
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1001 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1001 from flexible-match-mask prefix 1001
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1001 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1001 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1001 then count count-TEID-1001
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1001 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1001 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1001 from flexible-match-mask prefix 0xbfa80101
+set firewall family inet filter gtp-v1-stage3-source-filter term 1001 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1001 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1001 then count INNER-SRC-COUNT-191.168.1.1
+set firewall family inet filter gtp-v1-stage3-source-filter term 1001 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1001 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1001 from flexible-match-mask prefix 0xc0a80201
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1001 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1001 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1001 then count INNER-DST-COUNT-192.168.2.1
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1001 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1002 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1002 from flexible-match-mask prefix 1002
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1002 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1002 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1002 then count count-TEID-1002
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1002 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1002 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1002 from flexible-match-mask prefix 0xbfa80102
+set firewall family inet filter gtp-v1-stage3-source-filter term 1002 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1002 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1002 then count INNER-SRC-COUNT-191.168.1.2
+set firewall family inet filter gtp-v1-stage3-source-filter term 1002 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1002 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1002 from flexible-match-mask prefix 0xc0a80202
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1002 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1002 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1002 then count INNER-DST-COUNT-192.168.2.2
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1002 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1003 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1003 from flexible-match-mask prefix 1003
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1003 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1003 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1003 then count count-TEID-1003
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1003 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1003 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1003 from flexible-match-mask prefix 0xbfa80103
+set firewall family inet filter gtp-v1-stage3-source-filter term 1003 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1003 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1003 then count INNER-SRC-COUNT-191.168.1.3
+set firewall family inet filter gtp-v1-stage3-source-filter term 1003 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1003 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1003 from flexible-match-mask prefix 0xc0a80203
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1003 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1003 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1003 then count INNER-DST-COUNT-192.168.2.3
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1003 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1004 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1004 from flexible-match-mask prefix 1004
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1004 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1004 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1004 then count count-TEID-1004
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1004 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1004 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1004 from flexible-match-mask prefix 0xbfa80104
+set firewall family inet filter gtp-v1-stage3-source-filter term 1004 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1004 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1004 then count INNER-SRC-COUNT-191.168.1.4
+set firewall family inet filter gtp-v1-stage3-source-filter term 1004 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1004 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1004 from flexible-match-mask prefix 0xc0a80204
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1004 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1004 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1004 then count INNER-DST-COUNT-192.168.2.4
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1004 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1005 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1005 from flexible-match-mask prefix 1005
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1005 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1005 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1005 then count count-TEID-1005
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1005 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1005 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1005 from flexible-match-mask prefix 0xbfa80105
+set firewall family inet filter gtp-v1-stage3-source-filter term 1005 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1005 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1005 then count INNER-SRC-COUNT-191.168.1.5
+set firewall family inet filter gtp-v1-stage3-source-filter term 1005 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1005 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1005 from flexible-match-mask prefix 0xc0a80205
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1005 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1005 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1005 then count INNER-DST-COUNT-192.168.2.5
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1005 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1006 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1006 from flexible-match-mask prefix 1006
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1006 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1006 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1006 then count count-TEID-1006
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1006 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1006 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1006 from flexible-match-mask prefix 0xbfa80106
+set firewall family inet filter gtp-v1-stage3-source-filter term 1006 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1006 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1006 then count INNER-SRC-COUNT-191.168.1.6
+set firewall family inet filter gtp-v1-stage3-source-filter term 1006 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1006 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1006 from flexible-match-mask prefix 0xc0a80206
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1006 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1006 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1006 then count INNER-DST-COUNT-192.168.2.6
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1006 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1007 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1007 from flexible-match-mask prefix 1007
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1007 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1007 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1007 then count count-TEID-1007
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1007 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1007 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1007 from flexible-match-mask prefix 0xbfa80107
+set firewall family inet filter gtp-v1-stage3-source-filter term 1007 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1007 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1007 then count INNER-SRC-COUNT-191.168.1.7
+set firewall family inet filter gtp-v1-stage3-source-filter term 1007 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1007 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1007 from flexible-match-mask prefix 0xc0a80207
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1007 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1007 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1007 then count INNER-DST-COUNT-192.168.2.7
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1007 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1008 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1008 from flexible-match-mask prefix 1008
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1008 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1008 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1008 then count count-TEID-1008
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1008 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1008 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1008 from flexible-match-mask prefix 0xbfa80108
+set firewall family inet filter gtp-v1-stage3-source-filter term 1008 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1008 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1008 then count INNER-SRC-COUNT-191.168.1.8
+set firewall family inet filter gtp-v1-stage3-source-filter term 1008 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1008 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1008 from flexible-match-mask prefix 0xc0a80208
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1008 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1008 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1008 then count INNER-DST-COUNT-192.168.2.8
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1008 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1009 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1009 from flexible-match-mask prefix 1009
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1009 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1009 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1009 then count count-TEID-1009
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1009 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1009 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1009 from flexible-match-mask prefix 0xbfa80109
+set firewall family inet filter gtp-v1-stage3-source-filter term 1009 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1009 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1009 then count INNER-SRC-COUNT-191.168.1.9
+set firewall family inet filter gtp-v1-stage3-source-filter term 1009 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1009 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1009 from flexible-match-mask prefix 0xc0a80209
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1009 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1009 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1009 then count INNER-DST-COUNT-192.168.2.9
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1009 then accept
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1010 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1010 from flexible-match-mask prefix 1010
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1010 from flexible-match-mask flexible-mask-name GTPTEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1010 then policy-map TEID
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1010 then count count-TEID-1010
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1010 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1010 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage3-source-filter term 1010 from flexible-match-mask prefix 0xbfa8010a
+set firewall family inet filter gtp-v1-stage3-source-filter term 1010 from flexible-match-mask flexible-mask-name INNER-SRC-IP
+set firewall family inet filter gtp-v1-stage3-source-filter term 1010 then policy-map INNER-SRC
+set firewall family inet filter gtp-v1-stage3-source-filter term 1010 then count INNER-SRC-COUNT-191.168.1.10
+set firewall family inet filter gtp-v1-stage3-source-filter term 1010 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1010 from flexible-match-mask mask-in-hex 0xffffffff
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1010 from flexible-match-mask prefix 0xc0a8020a
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1010 from flexible-match-mask flexible-mask-name INNER-DST-IP
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1010 then policy-map INNER-DST
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1010 then count INNER-DST-COUNT-192.168.2.10
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1010 then accept

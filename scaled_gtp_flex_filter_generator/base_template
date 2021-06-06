@@ -1,0 +1,150 @@
+set firewall flexible-match GTPVer match-start layer-4
+set firewall flexible-match GTPVer byte-offset 8
+set firewall flexible-match GTPVer bit-offset 0
+set firewall flexible-match GTPVer bit-length 5
+set firewall flexible-match GTPTEID match-start layer-4
+set firewall flexible-match GTPTEID byte-offset 12
+set firewall flexible-match GTPTEID bit-offset 0
+set firewall flexible-match GTPTEID bit-length 32
+set firewall flexible-match INNER-SRC-IP match-start layer-4
+set firewall flexible-match INNER-SRC-IP byte-offset 28
+set firewall flexible-match INNER-SRC-IP bit-offset 0
+set firewall flexible-match INNER-SRC-IP bit-length 32
+set firewall flexible-match INNER-DST-IP match-start layer-4
+set firewall flexible-match INNER-DST-IP byte-offset 32
+set firewall flexible-match INNER-DST-IP bit-offset 0
+set firewall flexible-match INNER-DST-IP bit-length 32
+set firewall flexible-match INNER-SRC-PORT match-start layer-4
+set firewall flexible-match INNER-SRC-PORT byte-offset 36
+set firewall flexible-match INNER-SRC-PORT bit-offset 0
+set firewall flexible-match INNER-SRC-PORT bit-length 16
+set firewall flexible-match INNER-DST-PORT match-start layer-4
+set firewall flexible-match INNER-DST-PORT byte-offset 38
+set firewall flexible-match INNER-DST-PORT bit-offset 0
+set firewall flexible-match INNER-DST-PORT bit-length 16
+set firewall flexible-match V6-INNER-SRC-IP-T1 match-start layer-4
+set firewall flexible-match V6-INNER-SRC-IP-T1 byte-offset 24
+set firewall flexible-match V6-INNER-SRC-IP-T1 bit-offset 0
+set firewall flexible-match V6-INNER-SRC-IP-T1 bit-length 32
+set firewall flexible-match V6-INNER-SRC-IP-T2 match-start layer-4
+set firewall flexible-match V6-INNER-SRC-IP-T2 byte-offset 28
+set firewall flexible-match V6-INNER-SRC-IP-T2 bit-offset 0
+set firewall flexible-match V6-INNER-SRC-IP-T2 bit-length 32
+set firewall flexible-match V6-INNER-SRC-IP-T3 match-start layer-4
+set firewall flexible-match V6-INNER-SRC-IP-T3 byte-offset 32
+set firewall flexible-match V6-INNER-SRC-IP-T3 bit-offset 0
+set firewall flexible-match V6-INNER-SRC-IP-T3 bit-length 32
+set firewall flexible-match V6-INNER-SRC-IP-T4 match-start layer-4
+set firewall flexible-match V6-INNER-SRC-IP-T4 byte-offset 36
+set firewall flexible-match V6-INNER-SRC-IP-T4 bit-offset 0
+set firewall flexible-match V6-INNER-SRC-IP-T4 bit-length 32
+set firewall flexible-match V6-INNER-DST-IP-T1 match-start layer-4
+set firewall flexible-match V6-INNER-DST-IP-T1 byte-offset 40
+set firewall flexible-match V6-INNER-DST-IP-T1 bit-offset 0
+set firewall flexible-match V6-INNER-DST-IP-T1 bit-length 32
+set firewall flexible-match V6-INNER-DST-IP-T2 match-start layer-4
+set firewall flexible-match V6-INNER-DST-IP-T2 byte-offset 44
+set firewall flexible-match V6-INNER-DST-IP-T2 bit-offset 0
+set firewall flexible-match V6-INNER-DST-IP-T2 bit-length 32
+set firewall flexible-match V6-INNER-DST-IP-T3 match-start layer-4
+set firewall flexible-match V6-INNER-DST-IP-T3 byte-offset 48
+set firewall flexible-match V6-INNER-DST-IP-T3 bit-offset 0
+set firewall flexible-match V6-INNER-DST-IP-T3 bit-length 32
+set firewall flexible-match V6-INNER-DST-IP-T4 match-start layer-4
+set firewall flexible-match V6-INNER-DST-IP-T4 byte-offset 52
+set firewall flexible-match V6-INNER-DST-IP-T4 bit-offset 0
+set firewall flexible-match V6-INNER-DST-IP-T4 bit-length 32
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T1 match-start layer-4
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T1 byte-offset 24
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T1 bit-offset 0
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T1 bit-length 32
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T2 match-start layer-4
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T2 byte-offset 28
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T2 bit-offset 0
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T2 bit-length 32
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T3 match-start layer-4
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T3 byte-offset 32
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T3 bit-offset 0
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T3 bit-length 32
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T4 match-start layer-4
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T4 byte-offset 36
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T4 bit-offset 0
+set firewall flexible-match V6-IN-V6-INNER-SRC-IP-T4 bit-length 32
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T1 match-start layer-4
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T1 byte-offset 40
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T1 bit-offset 0
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T1 bit-length 32
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T2 match-start layer-4
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T2 byte-offset 44
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T2 bit-offset 0
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T2 bit-length 32
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T3 match-start layer-4
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T3 byte-offset 48
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T3 bit-offset 0
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T3 bit-length 32
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T4 match-start layer-4
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T4 byte-offset 52
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T4 bit-offset 0
+set firewall flexible-match V6-IN-V6-INNER-DST-IP-T4 bit-length 32
+set class-of-service policy-map GTPv1 inet-precedence proto-ip code-point 001
+set class-of-service policy-map GTPv2 inet-precedence proto-ip code-point 010
+set class-of-service policy-map TEID inet-precedence proto-ip code-point 011
+set class-of-service policy-map INNER-SRC inet-precedence proto-ip code-point 100
+set class-of-service policy-map INNER-DST inet-precedence proto-ip code-point 101
+set class-of-service policy-map INNER-DST-PORT inet-precedence proto-ip code-point 111
+set class-of-service policy-map INNER-SRC-PORT inet-precedence proto-ip code-point 110
+set class-of-service policy-map IPV6-SRC-T1 dscp-ipv6 proto-ip code-point 000001
+set class-of-service policy-map IPV6-SRC-T2 dscp-ipv6 proto-ip code-point 000010
+set class-of-service policy-map IPV6-SRC-T3 dscp-ipv6 proto-ip code-point 000011
+set class-of-service policy-map IPV6-SRC-T4 dscp-ipv6 proto-ip code-point 000100
+set class-of-service policy-map IPV6-DST-T1 dscp-ipv6 proto-ip code-point 000101
+set class-of-service policy-map IPV6-DST-T2 dscp-ipv6 proto-ip code-point 000110
+set class-of-service policy-map IPV6-DST-T3 dscp-ipv6 proto-ip code-point 000111
+set class-of-service policy-map IPV6-DST-T4 dscp-ipv6 proto-ip code-point 001000
+set firewall family inet filter gtp-v1-stage1-classify term GTPv1 from protocol udp
+set firewall family inet filter gtp-v1-stage1-classify term GTPv1 from port 2152
+set firewall family inet filter gtp-v1-stage1-classify term GTPv1 from flexible-match-mask mask-in-hex 0xe0000000
+set firewall family inet filter gtp-v1-stage1-classify term GTPv1 from flexible-match-mask prefix 0x30
+set firewall family inet filter gtp-v1-stage1-classify term GTPv1 from flexible-match-mask flexible-mask-name GTPVer
+set firewall family inet filter gtp-v1-stage1-classify term GTPv1 then policy-map GTPv1
+set firewall family inet filter gtp-v1-stage1-classify term GTPv1 then count count-GTPv1
+set firewall family inet filter gtp-v1-stage1-classify term GTPv1 then accept
+set firewall family inet filter gtp-v1-stage1-classify term GTPv2 from protocol udp
+set firewall family inet filter gtp-v1-stage1-classify term GTPv2 from port 2123
+set firewall family inet filter gtp-v1-stage1-classify term GTPv2 from flexible-match-mask mask-in-hex 0xe8000000
+set firewall family inet filter gtp-v1-stage1-classify term GTPv2 from flexible-match-mask prefix 0x40
+set firewall family inet filter gtp-v1-stage1-classify term GTPv2 from flexible-match-mask flexible-mask-name GTPVer
+set firewall family inet filter gtp-v1-stage1-classify term GTPv2 then policy-map GTPv2
+set firewall family inet filter gtp-v1-stage1-classify term GTPv2 then count count-GTPv2
+set firewall family inet filter gtp-v1-stage1-classify term GTPv2 then accept
+set firewall family inet filter gtp-v1-stage1-classify term NON-GTP then count NON-GTP-HITS
+set firewall family inet filter gtp-v1-stage1-classify term NON-GTP then discard
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1 from policy-map-except GTPv1
+set firewall family inet filter gtp-v1-stage2-filter-teid term 1 then accept
+set firewall family inet filter gtp-v1-stage3-source-filter term 1 from policy-map-except TEID
+set firewall family inet filter gtp-v1-stage3-source-filter term 1 then accept
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1 from policy-map-except INNER-SRC
+set firewall family inet filter gtp-v1-stage4-dest-filter term 1 then accept
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv1 from payload-protocol udp
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv1 from port 2152
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv1 from flexible-match-mask mask-in-hex 0xe0000000
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv1 from flexible-match-mask prefix 0x30
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv1 from flexible-match-mask flexible-mask-name GTPVer
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv1 then policy-map GTPv1
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv1 then count count-GTPv1-v6
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv1 then accept
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv2 from payload-protocol udp
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv2 from port 2123
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv2 from flexible-match-mask mask-in-hex 0xe8000000
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv2 from flexible-match-mask prefix 0x40
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv2 from flexible-match-mask flexible-mask-name GTPVer
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv2 then policy-map GTPv2
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term GTPv2 then count count-GTPv2-v6
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term NON-GTP-V6 then count NON-GTP-HITS-V6
+set firewall family inet6 filter gtp-v1-stage1-classify-v6 term NON-GTP-V6 then discard
+set firewall family inet6 filter gtp-v1-stage2-filter-teid-v6 term 1 from policy-map-except GTPv1
+set firewall family inet6 filter gtp-v1-stage2-filter-teid-v6 term 1 then accept
+set firewall family inet6 filter gtp-v1-stage3-source-filter-v6 term 1 from policy-map-except TEID
+set firewall family inet6 filter gtp-v1-stage3-source-filter-v6 term 1 then accept
+set firewall family inet6 filter gtp-v1-stage4-dest-filter-v6 term 1 from policy-map-except INNER-SRC
+set firewall family inet6 filter gtp-v1-stage4-dest-filter-v6 term 1 then accept
